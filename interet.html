@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>AOUN Cedric</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	</head>
+	<!-- Ceci est le body -->
+	<body>
+
+		<div class="fond1">
+			<header class="container">
+				<img class="logoclass" src="img/logo.png" height="300" width="300" alt="logo of the page">
+				<nav>
+					<a href="index.html"><i class="fas fa-home"></i> Acceuil</a>
+					<a href="competence.html"><i class="fas fa-desktop"></i> Compétences</a>
+					<a href="formation.html"><i class="fas fa-briefcase"></i> Formations</a>
+					<a href="interet.html"><i class="fas fa-gamepad"></i> Intérêts</a>
+
+				</nav>
+			</header>
+		</div>
+		<div class="fond2">
+		<main class="container">
+		<h1>Intérêts:</h1>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 4</div>
+		    <img src="img/pubg.jpg" alt="PlayerUnkown's Battlegrounds" style="width:100%">
+		    <div class="text">PlayerUnkown's Battlegrounds</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 4</div>
+		    <img src="img/witcher3.jpg" alt="Witcher 3" style="width:100%">
+		    <div class="text">Witcher 3</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 4</div>
+		    <img src="img/trials.jpg" alt="Trials Rising" style="width:100%">
+		    <div class="text">Trials Rising</div>
+		  </div>
+		   <div class="mySlides fade">
+		    <div class="numbertext">4 / 4</div>
+		    <img src="img/gta5.jpg" alt="GTA 5" style="width:100%">
+		    <div class="text">Grand Theft Auto 5</div>
+		  </div>
+		</div>			
+		</main>
+		</div>
+		<div class="fond3">
+		<footer class="container">
+			<nav>
+				<a href="https://www.linkedin.com/in/cedric-aoun-0a949b177/" target="blank"><i class="fab fa-linkedin"></i></a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</footer>
+		</div>
+		<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none"; 
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1} 
+				  slides[slideIndex-1].style.display = "block"; 
+				  setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+		</script>
+
+	</body>
+
+</html>
