@@ -16,7 +16,7 @@ article p {
 	color: white;
 }
 /* Commentary */
-.container {
+.container, #noFlex {
 	max-width:1024px;
 	margin: 0 auto;
 	background-color: rgba(66, 66, 66, 0.5);
@@ -25,6 +25,11 @@ article p {
 	margin-top: 5px;
 	text-align: center; 
 	position: relative;
+}
+main {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 footer[class="container"], header[class="container"] {
 	background-color: rgba(0,0,0,0.8);
@@ -47,14 +52,12 @@ footer a:hover {
 }
 a {
 	font-family: Impact;
-	background-color: #13338d;
-	border-width: 5px;
-	border-radius: 5px;
 	padding: 10px;
 	text-decoration: none;
-	color: black;
+	color: white;
+	letter-spacing: 0.05em;
 	display: inline-block;
-	box-shadow: 2px 2px black;
+	text-shadow: 2px 2px 5px rgba(40, 186, 253, 0.719);
 	bottom: 0;
 
 }
@@ -66,9 +69,10 @@ main ul {
 h3 {
 	text-decoration: underline;
 	color: white;
+	text-shadow: 2px 2px 5px rgba(40, 186, 253, 0.719);
 }
 iframe {
-	width: 70%;
+	width: 100%;
 	border: 0;
 }
 .titreinfo {
@@ -90,7 +94,9 @@ iframe {
 	"infoti"
 	"titreres"
 }
-
+#error {
+	display: none;
+}
 
 .fond1 {
 	background-image:url("../img/fond1.jpg");
@@ -126,10 +132,14 @@ td:first-of-type {
 }
 th:first-of-type {
 	background-color: rgb(54, 54, 54);
+	color: white;
+	border: black;
 
 }
 th {
-	background-color: rgb(54, 54, 54) ;
+	background-color: rgb(54, 54, 54);
+	color: white;
+	border: black;
 }
 
 
@@ -140,22 +150,37 @@ tr:first-child th  {
 }
 
 a:hover {
-	background-color:#0062ff;
+	text-shadow: 5px 5px 5px rgba(40, 186, 253, 0.719);
 	transition: 0.33s ease; 
 }
 a:active {
-	box-shadow: 0px 0px;
+	text-shadow: 0px 0px 0px;
 	transition: 0.10s ease;
-	background-color:#00307c;
 }	
 
 fieldset {
 	width: 100%;
 	text-align: left;
-	border-radius: 5px;
-	border-color: darkblue;
-	background-color: rgba(0,0,0,0.3);
-}	
+	border:none;
+	color: white;
+}
+label {
+	display: block;
+}
+span {
+	color:red;
+}
+input[type="email"] {
+	border: 1px solid white;
+	width: 30vh;
+}
+fieldset button, fieldset select {
+	color: white;
+	border: 1px, solid, white;
+}
+.aligned {
+	display: inline-block;
+}
 legend {
 	text-align: center;
 }
@@ -164,9 +189,10 @@ textarea {
 	height: 100px;
 }
 
-input, select, textarea, button {
-	background-color: rgba(0, 66, 173, 0.4);
-	border-radius: 5px;
+input, select, textarea, button, #bug {
+	background-color: rgba(0, 0, 0, 0.3);
+	border:none;
+	border-bottom: 1.5px solid white;
 	font-weight: bold;
 }
 ul {
@@ -235,8 +261,7 @@ i {
 	border-radius: 10px;
 }
 .text h1 {
-	background-color: rgb(54, 54, 54);
-	color: rgba(255, 255, 255, 0.9);
+	color: rgba(5, 5, 5, 1);
 }
 
 /* Number text (1/3 etc) */
@@ -298,24 +323,43 @@ i {
 h1 {
 	padding:10px;
 	border-radius: 5px;
-	background-color:rgb(134, 134, 134);
-	color:black;
+	color:white;
+	text-shadow: 0px 5px 5px rgba(40, 186, 253, 0.719);
+	text-decoration: underline;
 }
 header img {
 	overflow: hidden;
 }
-
-@keyframes logoanim {
+#SSimg {
+	animation: spaceshipanim1 5s linear forwards;
+}
+#SSimg2 {
+	animation: spaceshipanim2 5s linear forwards;
+}
+@keyframes spaceshipanim1 {
 	0% { 
-		left:0;
-		opacity: 0.1;
+		right:-40;
+		
 	}
 
 	100% {
-		left:35.50%;
-		opacity: 1;
+		right:100%;
+		top: 300px;
 	}
 }
+@keyframes spaceshipanim2 {
+	0% { 
+		right:-40;
+		
+	}
+
+	100% {
+		right:70%;
+		height: 30px;;
+		width: 50px;
+	}
+}
+
 
 
 

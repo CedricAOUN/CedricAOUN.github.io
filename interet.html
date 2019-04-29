@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 	</head>
 	<!-- Ceci est le body -->
 	<body>
@@ -24,9 +25,10 @@
 		</div>
 		<div class="fond2">
 		<main class="container">
-		<h1>Intérêts:</h1>
+		<h1 id="NoPrint">Intérêts:</h1>
+		<p id="error">Cette page n'est pas disponible pour imprimer</p>
 		<!-- Slideshow container -->
-		<div class="slideshow-container">
+		<div class="slideshow-container" id="NoPrint">
 
 		  <!-- Full-width images with number and caption text -->
 		  <div class="mySlides fade">
@@ -88,7 +90,7 @@
 				  slideIndex++;
 				  if (slideIndex > slides.length) {slideIndex = 1} 
 				  slides[slideIndex-1].style.display = "block"; 
-				  setTimeout(showSlides, 8000); // Change image every 2 seconds
+				  setTimeout(showSlides, 8000); // Change image every 2 seconds (Changed to 8)
 				}
 		</script>
 

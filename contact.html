@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 	</head>
 	<!-- Ceci est le body -->
 	<body>
@@ -22,26 +23,27 @@
 			</header>
 		</div>
 		<div class="fond2">
-		<main class="container">
-			<form>
+		<main class="container" id="FlexContent">
+			<p id="error">Cette page n'est pas disponible pour imprimer</p>
+			<form action="https://formspree.io/cedric.j.aoun@gmail.com" method="POST" id="NoPrint" >
 				<fieldset>
 					<legend>Contactez Moi</legend><br>
-					<label>*E-Mail </label><input type="email" name="email" required placeholder="example@email.com"><br>
-					<label>*Gender:</label>
-					<label>Homme</label><input type="radio" name="gender" required>
-					<label>Femme</label><input type="radio" name="gender" required><br>
-					<label>Êtes vous une startup?</label><input type="checkbox" name="startup"><br>
-					<label>Ceci est une offre de travail?</label><input type="checkbox" name="startup"><br>
+					<label><span>*</span>E-Mail:</label><input id="bug" type="email" name="email" required placeholder="example@email.com"><br>
+					<label><span>*</span>Gender:</label>
+					<label class="aligned">Homme</label><input type="radio" name="Male" required>
+					<label class="aligned">Femme</label><input type="radio" name="Female" required><br>
+					<label>Êtes vous une startup?</label><input type="checkbox" name="Startup"><br>
+					<label>Ceci est une offre de travail?</label><input type="checkbox" name="Work Offer"><br>
 					<label>Ou êtes vouz situé?</label><br>
-					<select>
+					<select name="Country">
 						<option disabled selected>Choisire</option>
 						<option>USA</option>
 						<option>FRANCE</option>
 						<option>GRANDE BRETAGNE</option>
 					</select><br>
-					<label>*Ecrivez votre message ici</label><br>
-					<textarea required placeholder="Enter your text here"></textarea><br>
-					<button>Envoyer Message</button><br>
+					<label><span>*</span>Ecrivez votre message ici:</label><br>
+					<textarea required placeholder="Enter your text here" name="Message"></textarea><br>
+					<button style="border: 1px solid white;">Envoyer Message</button><br>
 				</fieldset>
 			</form>	
 
