@@ -7,6 +7,7 @@ img {
 body {
 	background-color: #000;
 	font-family: Aldrich;
+	margin: 0;
 }
 article {
 	width:100%;
@@ -19,10 +20,8 @@ article p {
 .container, #noFlex {
 	max-width:1024px;
 	margin: 0 auto;
-	background-color: rgba(66, 66, 66, 0.5);
-	border-radius: 5px;
+	background-color: rgba(116, 0, 0, 0.47);
 	padding: 20px;
-	margin-top: 5px;
 	text-align: center; 
 	position: relative;
 }
@@ -30,6 +29,15 @@ main {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	align-items:center;
+}
+header[class="container"] {
+	border-bottom: 1px solid white;
+	box-shadow: 0px 10px 10px rgba(26, 26, 26, 0.3);
+}
+footer[class="container"] {
+	border-top: 1px solid white;
+	box-shadow: 0px -10px 10px rgba(26, 26, 26, 0.3);
 }
 footer[class="container"], header[class="container"] {
 	background-color: rgba(0,0,0,0.8);
@@ -72,8 +80,9 @@ h3 {
 	text-shadow: 2px 2px 5px rgba(40, 186, 253, 0.719);
 }
 iframe {
-	width: 100%;
-	border: 0;
+	width: 70%;
+	display: inline-block;
+	border:none;
 }
 .titreinfo {
 	grid-area: infoti;
@@ -99,54 +108,50 @@ iframe {
 }
 
 .fond1 {
-	background-image:url("../img/fond1.jpg");
-	border-radius: 5px;
+	background-image:url("../img/fond1v2.jpg");
+	background-size: cover;
 }
 .fond2 {
-	background-image:url("../img/fond2.png");
-	border-radius: 5px;
+	background-image:url("../img/fond2v2.jpg");
+	background-size: cover;
 }
 .fond3 {
-	background-image:url("../img/fond3fix.jpg");
-	border-radius: 5px;
+	background-image:url("../img/fond3v2.jpg");
+	background-size: cover;
 }
 table {
 	width: 100%;
 	font-family: Aldrich;
 	text-align: center;
 	border-collapse: collapse;
-	border-radius: 10px;
-	color:black;
 }
 .tabletitre {
-	color: black;
+	color: rgba(0,0,0,0.7);
 }
 td, th {
 	border:2px solid;
-	border-radius: 5px;
 	padding: 20px;
-	background-color: #d4d4d4;
+	background-color: rgba(212,212,212,0.7);
 }
 td:first-of-type {
-	background-color: rgb(151, 151, 151);
+	background-color: rgba(151, 151, 151, 0.7);
 }
 th:first-of-type {
-	background-color: rgb(54, 54, 54);
-	color: white;
-	border: black;
+	background-color: rgba(54, 54, 54, 0.7);
+	color: rgb(255,255,255);
+	border: rgba(0,0,0,0.7);
 
 }
 th {
-	background-color: rgb(54, 54, 54);
+	background-color: rgba(54, 54, 54,0.7);
 	color: white;
-	border: black;
+	border:none;
 }
 
 
 tr:first-child th  {
-	background-color: white;
+	background-color: rgba(255,255,255,0.7);;
 	color: black;
-	border-color: black;
 }
 
 a:hover {
@@ -157,7 +162,10 @@ a:active {
 	text-shadow: 0px 0px 0px;
 	transition: 0.10s ease;
 }	
-
+form {
+	display: inline-flex;
+	width: 100%;
+}
 fieldset {
 	width: 100%;
 	text-align: left;
@@ -168,7 +176,7 @@ label {
 	display: block;
 }
 span {
-	color:red;
+	font-style: italic;
 }
 input[type="email"] {
 	border: 1px solid white;
@@ -258,7 +266,6 @@ i {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.5);
 	bottom:4px;
-	border-radius: 10px;
 }
 .text h1 {
 	color: rgba(5, 5, 5, 1);
@@ -322,7 +329,6 @@ i {
 
 h1 {
 	padding:10px;
-	border-radius: 5px;
 	color:white;
 	text-shadow: 0px 5px 5px rgba(40, 186, 253, 0.719);
 	text-decoration: underline;
@@ -360,13 +366,6 @@ header img {
 	}
 }
 
-
-
-
-
-img {
-	border-radius: 10px;
-}
 @media screen and (max-width: 768px) {
 	header {
 		height: 200px;
