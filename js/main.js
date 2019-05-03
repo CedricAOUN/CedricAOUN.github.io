@@ -1,6 +1,5 @@
-//Burger toggle actions on mobile
+//Burger action toggle sur mobile
 var burger = document.getElementById("burger");
-var header = document.getElementById("navheader")
 
 burger.addEventListener('click', function(){
     burger.classList.toggle("is-active");
@@ -14,14 +13,14 @@ burger.addEventListener('click', function(){
 })
 
 
-
 //Spaceship stop transition - Formation Page
-var spaceship2 = document.getElementById("SSimg2")
+var spaceship = document.getElementById("SSimg2")
 setTimeout(function(){
-	spaceship2.setAttribute("src","img/spaceship3.png")
-},4500)
+	spaceship.setAttribute("src","img/spaceship3.png")
+},4500) //Apres 4.5 seconde de l'animation CSS(qui dure 5s en totale), on change l'image vers un vesseau avec les moteurs éteint.
 
-//SlideShow
+
+//SlideShow 
 var slideIndex = 0;
 showSlides();
 

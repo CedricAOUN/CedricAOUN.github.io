@@ -16,13 +16,17 @@ article p {
 	font-size: 20px;
 	color: white;
 }
-/* Commentary */
+/* Les container du contenu. */
 .container, #noFlex {
 	max-width:1024px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center; 
 	position: relative;
+}
+
+header {
+	min-height: 68px;
 }
 main {
 	background: linear-gradient(180deg, rgba(255,132,1,0.5) 0%, rgba(9,9,121,0.5) 54%, rgba(0,0,0,0.5) 100%);
@@ -51,8 +55,8 @@ footer a {
 	background-color: rgba(0,0,0,0);
 	color:white;
 	box-shadow: none;
-	display: block;
-	width: 10%;
+	display: inline-block;
+	width: 100%;
 	margin: 0 auto;
 }
 footer a:hover {
@@ -70,6 +74,7 @@ a {
 	bottom: 0;
 
 }
+/*Style du burger en responsive */
 #burger {
 	display:none;
 	position: absolute;
@@ -91,29 +96,12 @@ iframe {
 	display: inline-block;
 	border:none;
 }
-.titreinfo {
-	grid-area: infoti;
-}
-.titremap {
-	grid-area: mapti;
-}
-.titreres {
-	grid-area: titreres;
-	width: 100%;
-}
-#indexmain {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 0 5px;
-	grid-template-rows: AUTO;
-	grid-template-areas:
-	"infoti"
-	"titreres"
-}
+
+/*ID d'erreur, uniquement afficher dans la page print */
 #error {
 	display: none;
 }
-
+/* Les Background */
 .fond1 {
 	background-image:url("../img/fond1v2.jpg");
 	background-size: cover;
@@ -127,6 +115,7 @@ iframe {
 	background-image:url("../img/fond3v2.jpg");
 	background-size: cover;
 }
+/*Le tableau */
 table {
 	width: 100%;
 	font-family: Aldrich;
@@ -156,15 +145,13 @@ th {
 	border:none;
 	text-shadow: 3px 3px 5px rgba(40, 186, 253, 0.719);
 }
-header {
-	min-height: 68px;
-}
 
 tr:first-child th  {
 	background-color: rgba(0, 0, 0, 0.7);;
 	color: white;
 }
 
+/* transition des a quand on click ou on hover */
 a:hover {
 	text-shadow: 5px 5px 5px rgba(40, 186, 253, 0.719);
 	transition: 0.33s ease; 
@@ -173,6 +160,8 @@ a:active {
 	text-shadow: 0px 0px 0px;
 	transition: 0.10s ease;
 }	
+
+/*Formulaire */
 form {
 	display: inline-flex;
 	width: 100%;
@@ -219,6 +208,9 @@ ul {
 }
 i {
 	font-size: 18px;
+}
+textarea, input[type="email"] {
+	color: white;
 }
 
 /* Code Imported */
@@ -324,17 +316,8 @@ i {
 }
 
 /*Fin Code Imported */
-.logoclass {
-	animation: logoanim 3s;
-	position: absolute;
-	height: 50px;
-	width:50px;
-	top:75px;
-	left:35.50%;
-}
-.container {
-	position: relative;
-}
+
+
 
 h1 {
 	padding:10px;
@@ -345,6 +328,7 @@ h1 {
 header img {
 	overflow: hidden;
 }
+/* Animation du vesseau */
 #SSimg {
 	animation: spaceshipanim1 5s linear forwards;
 }
@@ -374,12 +358,11 @@ header img {
 		width: 50px;
 	}
 }
-textarea, input[type="email"] {
-	color: white;
-}
-
+/*animation du menu apres click du burger */
 @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 
+
+/* Comportement du site sur mobile */
 @media screen and (max-width: 600px) {
 	header a {
 		display: block;
