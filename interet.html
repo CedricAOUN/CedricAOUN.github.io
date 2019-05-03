@@ -8,19 +8,25 @@
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 	</head>
 	<!-- Ceci est le body -->
 	<body>
 
 		<div class="fond1">
 			<header class="container">
-				<nav>
+				<nav id="navbar">
 					<a href="index.html"><i class="fas fa-home"></i> Acceuil</a>
 					<a href="competence.html"><i class="fas fa-desktop"></i> Compétences</a>
 					<a href="formation.html"><i class="fas fa-briefcase"></i> Formations</a>
 					<a href="interet.html"><i class="fas fa-gamepad"></i> Intérêts</a>
 
 				</nav>
+				<button id="burger" class="hamburger hamburger--emphatic" type="button">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</header>
 		</div>
 		<div class="fond2">
@@ -28,7 +34,7 @@
 		<h1 id="NoPrint">Intérêts:</h1>
 		<p id="error">Cette page n'est pas disponible pour imprimer</p>
 		<!-- Slideshow container -->
-		<div class="slideshow-container" id="NoPrint">
+		<div class="slideshow-container NoPrint">
 
 		  <!-- Full-width images with number and caption text -->
 		  <div class="mySlides fade">
@@ -36,7 +42,7 @@
 		    <img src="img/pubg.jpg" alt="PlayerUnkown's Battlegrounds" style="width:100%">
 				<div class="text">
 					<h1 class="slideh1">PlayerUnkown's Battlegrounds</h1>
-					<p>J'aime bien la compétition, quoi de mieux qu'une partie contre 99 autres joueurs/adversaires, et seulement un vaiqueur ?</p>
+					<p>J'aime bien la compétition, quoi de mieux qu'une partie contre 99 autres joueurs/adversaires, et seulement un vainqueur ?</p>
 				</div>
 		  </div>
 
@@ -45,7 +51,7 @@
 		    <img src="img/ds3.jpg" alt="Witcher 3" style="width:100%">
 		    <div class="text">
 						<h1 class="slideh1">Dark Souls 3</h1>
-						<p> Dark Souls, c'est la définition d'un "Challenge", et c'est pour cela que j'attends chaque nouveau jeu de l'éditeur "FromSoftware" impatiemment </p>
+						<p> Dark Souls, c'est la définition d'un "Challenge", et c'est pour cela que j'attends chaque nouveau jeu de l'éditeur "FromSoftware" impatiemment. </p>
 				</div>
 		  </div>
 
@@ -54,7 +60,7 @@
 		    <img src="img/trials.jpg" alt="Trials Rising" style="width:100%">
 		    <div class="text">
 						<h1 class="slideh1">Trials Rising</h1>
-						<p>Jeu très simple à la base, mais presque impossible de maîtriser à fond. Je passe des heures incomptables sur ce jeux. "1 more try"</p>
+						<p>Jeu très simple à la base, mais presque impossible de maîtriser à fond. Je passe des heures incomptables sur ce jeux. "1 more try".</p>
 				</div>
 		  </div>
 		   <div class="mySlides fade">
@@ -77,23 +83,7 @@
 			</nav>
 		</footer>
 		</div>
-		<script>
-				var slideIndex = 0;
-				showSlides();
-
-				function showSlides() {
-				  var i;
-				  var slides = document.getElementsByClassName("mySlides");
-				  for (i = 0; i < slides.length; i++) {
-				    slides[i].style.display = "none"; 
-				  }
-				  slideIndex++;
-				  if (slideIndex > slides.length) {slideIndex = 1} 
-				  slides[slideIndex-1].style.display = "block"; 
-				  setTimeout(showSlides, 8000); // Change image every 2 seconds (Changed to 8)
-				}
-		</script>
-
+		<script src="js/main.js"></script>
 	</body>
 
 </html>

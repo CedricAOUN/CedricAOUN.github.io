@@ -8,6 +8,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+
 
 
 	</head>
@@ -15,42 +17,42 @@
 	<body>
 		<div class="fond1">
 			<header class="container" id="FlexContent">
-				<nav>
+				<nav id="navbar">
 					<a href="index.html"><i class="fas fa-home"></i> Acceuil</a>
 					<a href="competence.html"><i class="fas fa-desktop"></i> Compétences</a>
 					<a href="formation.html"><i class="fas fa-briefcase"></i> Formations</a>
 					<a href="interet.html"><i class="fas fa-gamepad"></i> Intérêts</a>
 				</nav>
+				<button id="burger" class="hamburger hamburger--emphatic" type="button">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</header>
 		</div>
 		<div class="fond2">
 		<main class="container">
-		<div id="indexmain">
-			<!--	<h1>Mon CV en ligne</h1>
-				<p id="par1">Hello World!</p>
-				<p class="par2">Villiers-Sur-Marne</p> -->
-				<article class="titreinfo"><h1>Infos générales:</h1>
+			<article class="titreinfo">
+				<h1>Infos générales:</h1>
 					<ul>
-				<li>Prénom: Cédric</li>
-				<li>Nom: AOUN</li>
-				<li>Age: 22 ans</li>
-				<li>Mail: cedric.j.aoun@gmail.com</li>
-				<li>Villier-Sur-Marne, 94350</li>
-			</ul>
-
-			
-				</article>
-				<article class="titreres">
-					<h1>Resumé:</h1>
-					<p>Dès l'âge de 13 ans, j'ai découvert le monde de la programmation via la modification de jeux vidéos (création de mods).
+						<li>Prénom: Cédric</li>
+						<li>Nom: AOUN</li>
+						<li>Age: 22 ans</li>
+						<li>Mail: cedric.j.aoun@gmail.com</li>
+						<li>Villier-Sur-Marne, 94350</li>
+					</ul>
+			</article>
+			<article class="titreres">
+				<h1>Resumé:</h1>
+				<p>Dès l'âge de 13 ans, j'ai découvert le monde de la programmation via la modification de jeux vidéos (création de mods).
 						Tout d'abord sur le Jeu <b><i>GTA : San Andreas</i></b>, j'ai pu utiliser le moteur de création pour mettre en place des courses et arènes de combat.
 						Cette experience m'ayant tout de suite interessée, j'ai souhaité en connaître davantage sur le développement, j'ai ainsi appris les langages <b>HTML</b>, <b>CSS</b> et <b>Python</b> sur <b>Codeacademy</b>. 
 						Actuellement, pour renforcer mes compétences et obtenir mon BAC, je suis la formation <b>"Passe Numérique Pro - Integration WEB"</b> au <b>CNAM</b> de <b>Paris</b>.
-					</p>
-				</article>
-			</main>
-			</div>
-			<div class="fond3">
+				</p>
+			</article>
+		</main>
+		</div>
+		<div class="fond3">
 			<footer class="container">
 				<nav>
 					<a href="#">Back To Top</a>
@@ -58,7 +60,7 @@
 					<a href="https://www.linkedin.com/in/cedric-aoun-0a949b177/" target="blank"><i class="fab fa-linkedin"></i></a>
 				</nav>
 			</footer>
-			</div>
 		</div>
+		<script src="js/main.js"></script>
 	</body>
 </html>

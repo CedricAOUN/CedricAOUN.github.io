@@ -1,7 +1,7 @@
 article p, ul li {
     color: black;
 }
-a, iframe, footer, header, #NoPrint {
+a, iframe, footer, header, .NoPrint {
     display: none;
 }
 #error {

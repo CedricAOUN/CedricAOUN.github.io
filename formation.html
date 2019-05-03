@@ -8,22 +8,28 @@
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
 
 	</head>
 	<!-- Ceci est le body -->
 	<body>
-			<span id="SS"><img id="SSimg2" src="img/spaceshipgif.gif" style="z-index: 0; position: absolute; width: 200px; height: 80px; bottom: 100px; right: -300px"></span>
-		<img id="SBimg" src="img/SB1.png" style="z-index: 0; position: absolute; width: 300px; height: 400px; top: 350px; left: 200px; "></span>
+		<span id="SS"><img id="SSimg2" src="img/spaceshipgif.gif" alt="spaceship"  style="z-index: 0; position: absolute; width: 200px; height: 80px; bottom: 100px; right: -300px"></span>
+		<img id="SBimg" src="img/SB1.png" alt="spacestation" style="z-index: 0; position: absolute; width: 300px; height: 400px; top: 350px; left: 200px; ">
 		<div class="fond1">
 			<header class="container">
-				<nav>
+				<nav id="navbar">
 					<a href="index.html"><i class="fas fa-home"></i> Acceuil</a>
 					<a href="competence.html"><i class="fas fa-desktop"></i> Compétences</a>
 					<a href="formation.html"><i class="fas fa-briefcase"></i> Formations</a>
 					<a href="interet.html"><i class="fas fa-gamepad"></i> Intérêts</a>
 
 				</nav>
+				<button id="burger" class="hamburger hamburger--emphatic" type="button">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</header>
 		</div>
 		<div class="fond2">
@@ -68,11 +74,6 @@
 			</nav>
 		</footer>
 		</div>
-		<script>
-		var spaceship2 = document.getElementById("SSimg2")
-		setTimeout(function(){
-			spaceship2.setAttribute("src","img/spaceship3.png")
-		},4500)
-		</script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
